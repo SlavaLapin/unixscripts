@@ -12,7 +12,7 @@ mkdir empoleon2/metang
 mkdir empoleon2/medicham
 touch empoleon2/amoonguss
 mkdir empoleon2/bastiodon
-touch empoleon/milotic
+touch empoleon2/milotic
 
 touch magmortar5
 touch murkrow1
