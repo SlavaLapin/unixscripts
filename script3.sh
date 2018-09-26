@@ -1,4 +1,6 @@
-cd lab0
+#!/bin/bash
+
+cd ~/lab0
 
 read -p 'Any Errors? ' ervar
 if [ $ervar -gt 0]
