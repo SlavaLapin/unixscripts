@@ -59,8 +59,8 @@ chmod o=w palpitoad1/steelix
 chmod g-o palpitoad1/steelix
 echo 'Permissions for steelix set \n'
 
-chmod g-r palpitoad1/axew
-chmod u-w pa1pitoad1/axew
+chmod 404 palpitoad1/axew
+sleep 3
 echo 'Permissions for axew set \n'
 
 chmod a= snivy7
