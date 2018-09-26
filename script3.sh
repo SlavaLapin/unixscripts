@@ -9,6 +9,7 @@ ln -s murkrow1 ./palpitoad1/axewmurkrow
 # no permission to write in palpitoad1
 chmod u+w ~/lab0/palpitoad1
 ln -s murkrow1 ./palpitoad1/axewmurkrow
+chmod u-w ~/lab0/palpitoad1
 # Works!
 
 #скопировать рекурсивно директорию empoleon2 в директорию lab0/empoleon2/bastiodon
@@ -32,6 +33,7 @@ cp murkrow1 ./bellsprout2/dratinimurkrow
 # no permission to write in bellsprout2
 chmod u+w ~/lab0/bellsprout2
 cp murkrow1 ./bellsprout2/dratinimurkrow
+chmod u-w ~/lab0/bellsprout2
 # Works!
 
 #cоздать жесткую ссылку для файла magmortar5 с именем lab0/palpitoad1/axewmagmortar
@@ -46,10 +48,14 @@ cp magmortar5 ./empoleon2/medicham
 # No permission to read magmortar5
 chmod u+r ~/lab0/magmortar5
 cp magmortar5 ./empoleon2/medicham
+chmod u-r ~/lab0/magmortar5
 
 #объеденить содержимое файлов lab0/bellsprout2/dratini, lab0/palpitoad1/axew, в новый файл lab0/murkrow1_94
 
 cat ./bellsprout2/dratini ./palpitoad1/axew > murkrow1_94
 # Works!
+
+#getting a tree
+ls -lR
 
 cd ..
