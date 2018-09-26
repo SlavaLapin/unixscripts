@@ -23,7 +23,7 @@ chmod u-w ~/lab0/palpitoad1
 
 #создать символическую ссылку c именем Copy_85 на директорию palpitoad1 в каталоге lab0
 
-ln -s palpitoad1 Copy_85
+ln -s palpitoad1 ~/lab0/Copy_85
 # Just works! Finally!
 
 #скопировать содержимое файла murkrow1 в новый файл lab0/bellsprout2/dratinimurkrow
@@ -52,7 +52,7 @@ chmod u-r ~/lab0/magmortar5
 
 #объеденить содержимое файлов lab0/bellsprout2/dratini, lab0/palpitoad1/axew, в новый файл lab0/murkrow1_94
 
-cat ./bellsprout2/dratini ./palpitoad1/axew > murkrow1_94
+cat ./bellsprout2/dratini ./palpitoad1/axew > ./murkrow1_94
 # Works!
 
 #getting a tree
