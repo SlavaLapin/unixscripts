@@ -1,52 +1,58 @@
+cd ~
 mkdir lab0
 cd lab0
 
-mkdir darumaka2
-touch darumaka2/klang
-touch darumaka2/shelmet
-mkdir darumaka2/machop
-mkdir darumaka2/rhyperior
-touch darumaka2/zweilous
+mkdir bellsprout2
+touch bellsprout2/dratini
+touch bellsprout2/panpour
+touch bellsprout2/nidoranF
 
-touch kingdra2
-touch krokodile5
-touch meowth1
+mkdir empoleon2
+mkdir empoleon2/metang
+mkdir empoleon2/medicham
+touch empoleon2/amoonguss
+mkdir empoleon2/bastiodon
+touch empoleon/milotic
 
-mkdir porygonz1
-mkdir porygonz1/sceptile
-mkdir porygonz1/haunter
-mkdir porygonz1/bronzong
-touch porygonz1/charmeleon
+touch magmortar5
+touch murkrow1
 
-mkdir shieldon7
-touch shieldon7/herdier
-mkdir shieldon7/dragonair
-mkdir shieldon7/mudkip
-mkdir shieldon7/chansey
-mkdir shieldon7/swalot
+mkdir palpitoad1
+touch palpitoad1/caterpile
+touch palpitoad1/volcarona
+mkdir palpitoad1/steelix
+touch palpitoad1/axew
 
-echo 'Тип диеты Ergovore Terravore' > darumaka2/klang
+touch snivy7
 
-echo 'weight=17.0 height=16.0
-atk=4 def=9' > darumaka2/zweilous
+echo 'satk=5 sdef=5 spd=5' > bellsprout2/dratini
 
-echo 'Способности Smokescreen
-Leer Water Gun Focus Energy Bubblebeam Agility Twister Brine Hydro
-Pump Dragon Dance Dragon Pulse' > kingdra2
+echo 'Развитые способности
+Prankster' > bellsprout2/panpour
 
-echo 'Способности Bite
-Sand-Attack Torment Sand Tomb Assurance Mud-Slap Embargo Swagger
-Crunch Dig Scary Face Foul Play Sandstorm Earthquake
-Outrage' > krokodile5
+echo 'Способности Growl Scratch Tail Whip Double Kick
+Poison Sting Fury Swipes Bite Helping Hand Toxic Spikes Flatter Crunch
+Captivate Poison Fang' > bellsprout2/nidoranF
 
-echo 'Тип покемона NORMAL NONE' > meowth1
+echo 'weight=23.1 height=24.0 atk=9
+def=7' > empoleon2/amoonguss
 
-echo 'Ходы Body Slam
-Counter Defense Curl Double-Edge Dynamic Punch Fire Pledge Fire Punch
-Focus Punch Fury Cutter Heat Wave Iron Tail Outrage Mega Kick Mega
-' > porygonz1/charmeleon
+echo 'Способности Torrent Marvel Scale Swift
+Swim' > empoleon2/milotic
 
-echo 'Ходы Covet Helping Hand Hyper Voice Last Resort
-Sleep Talk Snore Uproar' > shieldon7/herdier
+echo 'Развитые способности Vital
+Spirit' > magmortar5
+
+echo 'weigth=4.6 height=20.0 atk=9 def=4' > murkrow1
+
+echo 'Тип
+покемона BUG NONE' > palpitoad1/caterpie
+
+echo 'satk=14 sdef=11 spd=10' > palpitoad1/volcarona
+
+echo 'satk=3
+sdef=4 spd=6' > palpitoad1/axew
+
+echo 'Тип диеты Herbivore' > snivy7
 
 cd ..
