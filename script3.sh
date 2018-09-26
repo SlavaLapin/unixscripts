@@ -3,7 +3,7 @@
 cd ~/lab0
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -14,7 +14,7 @@ fi
 ln -s murkrow1 ./palpitoad1/axewmurkrow
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -25,7 +25,7 @@ fi
 cp -R empoleon2 ./empoleon2/bastiodon
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -36,7 +36,7 @@ fi
 ln -s palpitoad1 Copy_85
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -47,7 +47,7 @@ fi
 cp murkrow1 ./bellsprout2/dratinimurkrow
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -58,7 +58,7 @@ fi
 ln magmortar5 ./palpitoad1/axewmagmortar
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
@@ -69,7 +69,7 @@ fi
 cp magmortar5 ./empoleon2/medicham
 
 read -p 'Any Errors? ' ervar
-if [ $ervar -gt 0]
+if [ $ervar -gt 0 ]
 	then
 	echo 'Fix them'
 	exit 12113
