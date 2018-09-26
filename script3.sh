@@ -39,6 +39,10 @@ chmod u-w ~/lab0/bellsprout2
 #cоздать жесткую ссылку для файла magmortar5 с именем lab0/palpitoad1/axewmagmortar
 
 ln magmortar5 ./palpitoad1/axewmagmortar
+# ln: cannot create link ./palpitoad1/axewmagmortar: Permission denied
+chmod u+w ~/lab0/palpitoad1
+ln magmortar5 ./palpitoad1/axewmagmortar
+chmod u-w ~/lab0/palpitoad1
 # Works!
 
 #скопировать файл magmortar5 в директорию lab0/empoleon2/medicham
