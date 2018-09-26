@@ -7,29 +7,74 @@ if [ $ervar -gt 0]
 	exit 12113
 fi
 
-cp krokodile5 darumaka2/rhyperior
-#Works
+#cоздать символическую ссылку для файла murkrow1 с именем lab0/palpitoad1/axewmurkrow
 
-cp kingdra2 shieldon7/herdierkingdra
-#cp: cannot open kingdra2: Permission denied
-#Let's change file Permissions
-chmod u+r kingdra2
-cp kingdra2 shieldon7/herdierkingdra
-#Success!
+ln -s murkrow1 ./palpitoad1/axewmurkrow
 
-ln -s darumaka2 Copy_16
-#Works
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
 
-ln -s meowth1 darumaka2/klangmeowth1
-#Works
+#скопировать рекурсивно директорию empoleon2 в директорию lab0/empoleon2/bastiodon
 
-ln krokodile5 darumaka2/shelmetkrokodile
-#Works
+cp -R empoleon2 ./empoleon2/bastiodon
 
-cat porygonz1/charmeleon darumaka2/zweilous > meowth1_41
-#Works
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
 
-cp -R porygonz1 shieldon7/chansey
-#Works
+#создать символическую ссылку c именем Copy_85 на директорию palpitoad1 в каталоге lab0
+
+ln -s palpitoad1 Copy_85
+
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
+
+#скопировать содержимое файла murkrow1 в новый файл lab0/bellsprout2/dratinimurkrow
+
+cp murkrow1 ./bellsprout2/dratinimurkrow
+
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
+
+#cоздать жесткую ссылку для файла magmortar5 с именем lab0/palpitoad1/axewmagmortar
+
+ln magmortar5 ./palpitoad1/axewmagmortar
+
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
+
+#скопировать файл magmortar5 в директорию lab0/empoleon2/medicham
+
+cp magmortar5 ./empoleon2/medicham
+
+read -p 'Any Errors? ' ervar
+if [ $ervar -gt 0]
+	then
+	echo 'Fix them'
+	exit 12113
+fi
+
+#объеденить содержимое файлов lab0/bellsprout2/dratini, lab0/palpitoad1/axew, в новый файл lab0/murkrow1_94
+
+cat ./bellsprout2/dratini ./palpitoad1/axew > murkrow1_94
 
 cd ..
