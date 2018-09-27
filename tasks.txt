@@ -1,0 +1,102 @@
+2. Set up file and directory permissions chmod, using different approaches.
+
+bellsprout2: r-xrwxrw-
+dratini: rw-------
+panpour: r--r--r--
+nidoranF: права 046
+empoleon2: -wx-wx-wx
+metang: rwxrw-r--
+medicham: владелец должен записывать директорию и переходить в нее; группа-владелец должна только переходить в директорию; остальные пользователи должны только переходить в директорию
+amoonguss: владелец должен читать и записывать файл; группа-владелец должна не иметь никаких прав; остальные пользователи должны не иметь никаких прав
+bastiodon: права 357
+milotic: права 444
+magmortar5: права 064
+murkrow1: rw--w----
+palpitoad1: владелец должен читать директорию и переходить в нее; группа-владелец должна читать, записывать директорию и переходить в нее; остальные пользователи должны читать, записывать директорию и переходить в нее
+caterpie: владелец должен читать файл; группа-владелец должна не иметь никаких прав; остальные пользователи должны читать файл
+volcarona: владелец должен читать файл; группа-владелец должна читать файл; остальные пользователи должны читать файл
+steelix: rwxr-x-w-
+axew: r-----r--
+snivy7: владелец должен читать файл; группа-владелец должна не иметь никаких прав; остальные пользователи должны читать файл
+
+
+
+
+3. Copy tree parts and create links with cp and ln, as well as with cat and io streams redirection.
+
+cоздать символическую ссылку для файла murkrow1 с именем lab0/palpitoad1/axewmurkrow
+
+ln -s murkrow1 lab0
+скопировать рекурсивно директорию empoleon2 в директорию lab0/empoleon2/bastiodon
+создать символическую ссылку c именем Copy_85 на директорию palpitoad1 в каталоге lab0
+скопировать содержимое файла murkrow1 в новый файл lab0/bellsprout2/dratinimurkrow
+cоздать жесткую ссылку для файла magmortar5 с именем lab0/palpitoad1/axewmagmortar
+скопировать файл magmortar5 в директорию lab0/empoleon2/medicham
+объеденить содержимое файлов lab0/bellsprout2/dratini, lab0/palpitoad1/axew, в новый файл lab0/murkrow1_94
+
+
+
+
+4. Using cat, wc, ls, head, tail, echo, sort, grep looks up and filters directory, files and data in it.
+
+Рекурсивно подсчитать количество строк содержимого файлов из директории lab0, имя которых начинается на 'p', отсортировать вывод по уменьшению количества, подавить вывод ошибок доступа
+Вывести три первых элемента рекурсивного списка имен и атрибутов файлов в директории lab0, содержащих строку "me", список отсортировать по убыванию даты модификации файла, ошибки доступа перенаправить в файл в директории /tmp
+Вывести содержимое файлов с номерами строк в директории palpitoad1, исключить строки, содержащие "vo", регистр символов игнорировать, подавить вывод ошибок доступа
+Вывести список имен и атрибутов файлов в директории empoleon2, список отсортировать по возрастанию даты модификации файла, подавить вывод ошибок доступа
+Вывести рекурсивно список имен и атрибутов файлов в директории lab0, заканчивающихся на символ '1', список отсортировать по имени a->z, добавить вывод ошибок доступа в стандартный поток вывода
+Вывести рекурсивно список имен и атрибутов файлов в директории lab0, содержащих строку "me", список отсортировать по убыванию даты доступа к файлу, подавить вывод ошибок доступа
+
+
+
+
+5. Remove files using rm and rmdir according following:
+
+Удалить файл magmortar5
+Удалить файл lab0/bellsprout2/nidoranF
+удалить символические ссылки lab0/palpitoad1/axewmurkr*
+удалить жесткие ссылки lab0/palpitoad1/axewmagmort*
+Удалить директорию palpitoad1
+Удалить директорию lab0/empoleon2/metang
+
+
+.:
+total 17
+dr-xrwxrw-   2 s225117  studs          6 сент. 27 02:17 bellsprout2
+lrwxrwxrwx   1 s225117  studs         10 сент. 27 02:17 Copy_85 -> palpitoad1
+d-wx-wx-wx   5 s225117  studs          7 сент. 27 02:17 empoleon2
+----rw-r--   2 s225117  studs         53 сент. 27 02:17 magmortar5
+-rw--w----   1 s225117  studs         35 сент. 27 02:17 murkrow1
+-rw-r--r--   1 s225117  studs         40 сент. 27 02:17 murkrow1_94
+dr-xrwxrwx   3 s225117  studs          9 сент. 27 02:17 palpitoad1
+-r-----r--   1 s225117  studs         28 сент. 27 02:17 snivy7
+
+./bellsprout2:
+total 7
+-rw-------   1 s225117  studs         20 сент. 27 02:17 dratini
+-rw-------   1 s225117  studs         35 сент. 27 02:17 dratinimurkrow
+----r--rw-   1 s225117  studs        152 сент. 27 02:17 nidoranF
+-r--r--r--   1 s225117  studs         50 сент. 27 02:17 panpour
+
+./empoleon2:
+./empoleon2: Permission denied
+total 7
+
+./palpitoad1:
+total 13
+-r-----r--   1 s225117  studs         20 сент. 27 02:17 axew
+----rw-r--   2 s225117  studs         53 сент. 27 02:17 axewmagmortar
+lrwxrwxrwx   1 s225117  studs          8 сент. 27 02:17 axewmurkrow -> murkrow1
+-r-----r--   1 s225117  studs         33 сент. 27 02:17 caterpie
+-rw-r--r--   1 s225117  studs          0 сент. 27 02:17 caterpile
+drwxr-x-w-   2 s225117  studs          2 сент. 27 02:17 steelix
+-r--r--r--   1 s225117  studs         23 сент. 27 02:17 volcarona
+
+./palpitoad1/steelix:
+total 0
+
+
+
+
+
+for later:
+ls -lR 2>/tmp/225227lab0 | grep studs | grep -v '^d'| grep d* | sort -k 2,2
