@@ -1,37 +1,42 @@
-cd lab0
+cd ~/lab0
 
-rm meowth1
-#rm: meowth1: override protection 400 (да/нет)? 
+rm magmortar5
+#rm: magmortar5: override protection 64 (да/нет)? 
 #y
-#Successs
+chmod u+w magmortar5
+rm magmortar5
 
-rm darumaka2/shelmet
-#rm: darumaka2/shelmet: override protection 440 (да/нет)?
+rm ./bellsprout2/nidoranF
+#rm: ./bellsprout2/nidoranF: override protection 46 (да/нет)? 
 #y
+chmod u+w ./bellsprout2/nidoranF
+chmod u+w ./bellsprout2
+rm ./bellsprout2/nidoranF
+
+rm ./palpitoad1/axewmurkr*
 #Success
 
-rm Copy_*
-#Success
-
-rm darumaka2/shelmetkrokodi*
-#Success
-
-rm -r shieldon7
-#rm: shieldon7/herdier: override protection 444 (да/нет)? 
+rm ./palpitoad1/axewmagmort*
+#rm: ./palpitoad1/axewmagmortar: override protection 64 (да/нет)? 
 #y
-#rm: cannot read directory shieldon7/chansey: Permission denied
-#rm: shieldon7/herdierkingdra: override protection 404 (да/нет)?
+chmod -R u+w palpitoad1
+rm ./palpitoad1/axewmagmort*
+
+rmdir palpitoad1
+#rmdir: directory "palpitoad1": Directory not empty
+rm ./palpitoad1/*
+#rm: ./palpitoad1/axew: override protection 404 (да/нет)? 
 #y
-#rm: Unable to remove directory shieldon7: File exists
-chmod u+r shieldon7/chansey
-chmod u+wx shieldon7/herdier*
-rm -r shieldon7
+#rm: ./palpitoad1/caterpie: override protection 404 (да/нет)? 
+#y
+#rm: ./palpitoad1/steelix is a directory
+#rm: ./palpitoad1/volcarona: override protection 444 (да/нет)? 
+#y
+rmdir ./palpitoad1/steelix
+rm ./palpitoad1/*
+rmdir palpitoad1
 
-
-
-rm -r darumaka2/rhyperior
-#rm: cannot read directory darumaka2/rhyperior: Permission denied
-chmod u+r darumaka2/rhyperior
-rm -r darumaka2/rhyperior
+rmdir lab0/empoleon2/metang
+#Success
 
 cd ..
